@@ -83,7 +83,7 @@
             </div>
             <div class="swift row col-md-3">
                 <div class="swiftIcon">
-                    <img src="../pictures/swiftIconGrey.png" />
+                    <img src="pictures/swiftIconGrey.png" />
                     <p>{{skill.txtSwift}}</p>
                 </div>
             </div>
@@ -122,31 +122,32 @@
     <section class="educationSection" ng-controller="EducationController">
         <div class="educationContainer container-fluid text-center">
                 <div class="documentViewer row col-md-4">
-                    <div class="background">
-                        <div id="target" class="carousel slide" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators text-center" style="top: calc(100%);">
-                                <li data-target="#target" data-slide-to="0" class="active"></li>
-                                <li data-target="#target" data-slide-to="1"></li>
+                    <div class="background text-center">
+                        <div id="carouselTarget" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                            <ol class="carousel-indicators text-center" style="margin-bottom: calc(-25%);">
+                                <li data-target="#carouselTarget" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselTarget" data-slide-to="1"></li>
                             </ol>
+
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img class="techTrackDoc" src="pictures/techCert.png" />
+                                    <img class="techTrackDoc" src="pictures/techCert.png" alt="Tech Track Certificate" />
                                 </div>
                                 <div class="item">
-                                    <img class="diploma" src="pictures/diplomaPic.png" />
+                                    <img class="diploma" src="pictures/diplomaPic.png" alt="Diploma"/>
                                 </div>
                             </div>
+
                         </div>
                     </div>
-                    <div class="buttons">
-                        <a class="left carousel-control" href="#target" role="button" data-slide="prev">
-                            <i class="fa fa-angle-left" style="font-size:4vw;color:white;margin-right:calc(5%);"></i>
-                        </a>
-                        <a class="right carousel-control" href="#target" role="button" data-slide="next">
-                            <i class="fa fa-angle-right" style="font-size:4vw;color:white;margin-left:calc(5%);"></i>
+                    <div class="buttons text-center">
+                        <a class="left carousel-control" href="#carouselTarget" role="button" data-slide="prev">
+                            <i class="fa fa-files-o" aria-hidden="true" style="font-size:3vw;color:white;"></i>
                         </a>
                     </div>
                 </div>
+
                 <div class="educationContent row col-md-6 col-md-offset-1">
                     <header>{{education.title}}</header>
                     <div class="titleUnderline"></div>
