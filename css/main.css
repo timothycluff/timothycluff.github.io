@@ -233,14 +233,20 @@ body {
     top: 0;
 }
 .educationContainer .documentViewer {
-    height: calc(90%);
+    height: calc(100%);
     margin-left: calc(5%);
 }
-.educationContainer .documentViewer .background {
+.background {
     height: calc(400px);
     width: calc(100%);
     background-color: #514E4F;
     border-radius: 25px;
+    margin-top: calc(15%);
+}
+.buttons {
+    position: absolute;
+    top: calc(80%);
+    left: calc(19%);
 }
 .buttons a {
     text-decoration: none;
@@ -254,9 +260,7 @@ body {
     border-radius: 10px;
     background-image: none;
     opacity: 1;
-    margin-top: calc(10%);
     background-color: #8B0912;
-    margin-left: calc(43%);
 }
 .left:hover {
     border: 4px solid #514E4F;
