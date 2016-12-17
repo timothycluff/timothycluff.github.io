@@ -233,20 +233,25 @@ body {
     top: 0;
 }
 .educationContainer .documentViewer {
-    height: calc(100%);
+    height: calc(70%);
     margin-left: calc(5%);
 }
 .background {
-    height: calc(400px);
+    height: 400px;
     width: calc(100%);
+    min-width: 400px;
+    max-height: 380px;
     background-color: #514E4F;
     border-radius: 25px;
     margin-top: calc(15%);
 }
 .buttons {
-    position: absolute;
-    top: calc(80%);
-    left: calc(19%);
+    height: 60px;
+    width: calc(100%);
+    min-width: 400px;
+    margin-top: 25px;
+    margin-left: -10px;
+    padding: 0;
 }
 .buttons a {
     text-decoration: none;
@@ -285,35 +290,22 @@ body {
     height: 2px;
     background-color: black;
 }
-#carouselTarget {
-    width: calc(100%);
-    height: calc(70%);
-}
-#carouselTarget .carousel-inner {
-    width: calc(100%);
-    height: calc(100%);
-    margin-top: calc(15%);
+.carousel-indicators{
+    margin-bottom: calc(-9%);
 }
 .item {
-    width: calc(100%);
     height: calc(100%);
-    padding: 0;
-    margin: 0;
 }
 .techTrackDoc,
 .diploma {
-    background-size: cover;
+    background-size: calc(100%);
     background-position: center;
-    height: 300px;
-    width: calc(100%);
+    height: 375px;
     padding: 0;
-    margin: 0;
 }
-.highSchool{
-    width: calc(80%);
-    height: calc(55%);
-    margin-top: calc(7%);
-    margin-left: calc(10%);
+.active {
+    margin: 0;
+    padding: 0;
 }
 .highSchool p {
     font-family: 'Source Code Pro', sans-serif;
