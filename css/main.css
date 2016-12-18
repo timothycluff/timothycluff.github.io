@@ -10,10 +10,11 @@ body {
     background-attachment: fixed;
 }
 .homeContainer {
-    background-image: url(../pictures/snowbirdCover.jpg);
-    background-size: cover;
+    background-image: url(../pictures/skiLiftCover.jpg);
+    background-size: calc(100%);
     background-attachment: fixed;
-    height: 1000px;
+    background-repeat: no-repeat;
+    height: 950px;
     overflow: hidden;
     visibility: visible;
 }
@@ -23,9 +24,6 @@ body {
     border: none;
     font-weight: bold;
     background-color: rgba(0,0,0,.9);
-}
-.navbar-fixed-top .navbar-header {
-
 }
 .navbar-fixed-top .navbar-nav {
     padding-right: 10px;
@@ -277,6 +275,7 @@ body {
 .educationContainer .educationContent {
     height: calc(100%);
     margin-top: calc(1.5%);
+    min-width: 575px;
 }
 .educationContent header {
     font-family: 'Reem Kufi', sans-serif;
@@ -293,8 +292,16 @@ body {
 .carousel-indicators{
     margin-bottom: calc(-9%);
 }
-.item {
+.carousel-inner {
     height: calc(100%);
+}
+.item img {
+    height: calc(70%);
+    width: calc(75%);
+    min-width: 300px;
+    max-height: 325px;
+    margin-left: calc(12.5%);
+    margin-top: calc(7%);
 }
 .techTrackDoc,
 .diploma {
@@ -307,8 +314,47 @@ body {
     margin: 0;
     padding: 0;
 }
-.highSchool p {
+.highSchool p,
+.techTrack p {
     font-family: 'Source Code Pro', sans-serif;
     font-weight: 300;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
+    margin-top: calc(5%);
+}
+.codeContainer {
+    height: 400px;
+    background: url(../pictures/swiftCode.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+}
+.contactContainer {
+    height: 350px;
+    background-color:  #514E4F;
+}
+.contactButtons {
+    height: 100px;
+}
+.email, .linkedin, .resume {
+    background-color: #8B0912;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+}
+.email a span,
+.linkedin a span,
+.resume a span {
+    color:black;
+    font-family:'Source Code Pro',sans-serif;
+    font-size: 20px;
+}
+.instaIcon, .twitter, .git {
+    background-color: #8B0912;
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    border-radius: calc(50%);
+}
+.contactButtons li div:hover {
+    border-bottom: 4px solid #4790F5;
 }

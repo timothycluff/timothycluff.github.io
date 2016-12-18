@@ -12,7 +12,6 @@
 <body>
 <div class="wrapper">
 
-
     <div ng-controller="NavController">
         <nav class="navbar navbar-fixed-top" style="z-index: 1000;">
             <div class="navbar-header navbar-left">
@@ -129,12 +128,12 @@
                                 <li data-target="#carouselTarget" data-slide-to="1"></li>
                             </ol>
 
-                            <div class="carousel-inner" role="listbox">
+                            <div class="carousel-inner text-center" role="listbox">
                                 <div class="item active">
-                                    <img class="techTrackDoc" src="pictures/techCert.png" alt="Tech Track Certificate" />
+                                    <img class="techTrackDoc" src="pictures/techCert.jpg" alt="Tech Track Certificate" />
                                 </div>
                                 <div class="item">
-                                    <img class="diploma" src="pictures/diplomaPic.png" alt="Diploma"/>
+                                    <img class="diploma" src="pictures/diplomaPic.jpg" alt="Diploma"/>
                                 </div>
                             </div>
                         </div>
@@ -151,8 +150,11 @@
                     <header>{{education.title}}</header>
                     <div class="titleUnderline"></div>
                     <div class="techTrack">
-                        <p></p>
+                        <p>{{education.techTrackText}}</p>
                     </div>
+
+                    <hr />
+
                     <div class="highSchool">
                         <p>{{education.highSchoolText}}</p>
                     </div>
@@ -160,7 +162,48 @@
             </div>
     </section>
 
+    <section class="codePicSection">
+        <div class="codeContainer container-fluid text-center .parallax-container" data-parallax="scroll"></div>
+    </section>
 
+    <section class="contactSection">
+        <div class="contactContainer container-fluid">
+            <ul class="contactButtons list-inline">
+                <li>
+                    <a href="mailto:timcluff24@gmail.com" class="contact">
+                        <i class="fa fa-envelope pull-left"></i>
+                        <span class="pull-left">CONTACT</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/timothy-cluff-3b2738132?trk=nav_responsive_tab_profile_pic">
+                        <i class="fa fa-linkedin pull-left"></i>
+                        <span class="pull-left">LINKEDIN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Intern%20Resume.pdf">
+                        <i class="fa fa-file-text-o pull-left"></i>
+                        <span class="pull-left">RESUME</span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/timmy_tim_tim_/?hl=en">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/CluffTim">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
 
 </div>
 

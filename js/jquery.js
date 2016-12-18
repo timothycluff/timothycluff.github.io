@@ -13,9 +13,6 @@ var topOfDiv = $('.aboutContainer').offset().top;
         }
     });
 
-    if ($('.item').hasClass($('.active')) && ($('.item .img').hasClass($('.diploma')))){
-        $('.techTrack p').css("opacity", "0");
-    }
 
 
 });
