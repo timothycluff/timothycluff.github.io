@@ -13,6 +13,14 @@ var topOfDiv = $('.aboutContainer').offset().top;
         }
     });
 
+    $('.listTwo .socialButtons #btnInsta').hover(
+        function() {
+            $('#btnInsta .btnUnderline').css("animation", "socialUnderline .8s easeOutBounce").stop(false, false);
+        },
+        function () {
+            $(this).find("div").stop(true, true).fadeOut();
+        }
+    );
 
 
 });
