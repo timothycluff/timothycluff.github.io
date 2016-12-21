@@ -14,9 +14,10 @@ body {
     background-size: calc(100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 950px;
+    height: 1050px;
     overflow: hidden;
     visibility: visible;
+    padding:0;
 }
 .navbar-fixed-top {
     font-family: "Gill Sans";
@@ -49,7 +50,7 @@ body {
 }
 .homeText {
     margin: 0 auto;
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro", sans-serif;
     color: #8B0912;
     position: fixed;
     display: block;
@@ -57,21 +58,26 @@ body {
 }
 .homeName {
     margin-top: calc(10%);
+    padding-top: calc(1%);
     font-size: 4vw;
     font-weight: 300;
     letter-spacing: 35px;
     opacity: 1;
-
+    white-space: nowrap;
+    background-color: rgba(0,0,0,.8);
 }
 .homeTitle {
     font-size: 2vw;
     letter-spacing: 30px;
     opacity: 1;
     margin-top: calc(20%);
+    white-space: nowrap;
+    padding-top: calc(1%);
+    background-color: rgba(0,0,0,.8);
 }
 .aboutContainer {
     z-index: 2;
-    height: 700px;
+    height: 600px;
     background: white;
 }
 .aboutContainer .aboutLeft {
@@ -99,7 +105,7 @@ body {
 }
 .skillContainer {
     background-color: #514E4F;
-    padding-bottom: calc(10%);
+    padding-bottom: calc(20%);
     border-bottom: none;
     z-index: 1;
 }
@@ -120,15 +126,10 @@ body {
     border-radius: 50%;
     background-color: #8B0912;
 }
-.skillContainer .java p {
-    font-family: "Source Code Pro";
-    font-size: 3vw;
-    color: #8B0912;
-    margin-top: calc(25%);
-}
 .skillContainer .web p,
 .skillContainer .cSharp p,
-.skillContainer .swift p {
+.skillContainer .swift p,
+.skillContainer .java p {
     font-family: "Source Code Pro";
     font-size: 3vw;
     margin-top: calc(100%);
@@ -149,7 +150,7 @@ body {
     position: relative;
 }
 .skillContentContainer {
-    background: url(../pictures/mountains.jpg);
+    background: url(../pictures/tech.jpg);
     width: calc(100%);
     background-size: cover;
     height: 1000px;
@@ -344,13 +345,14 @@ body {
     border-radius: 10px;
     width: 150px;
     height: 50px;
+    transition: border-bottom .4s ease-in-out;
+}
+.contactButtons li:hover {
+    border-bottom: 4px solid #00A1F1;
 }
 #btnContact,
 #btnLinkedin {
     margin-right: calc(7%);
-}
-.contactButtons li:hover {
-    border-bottom: 4px solid #4790F5;
 }
 #btnContact a,
 #btnLinkedin a,
@@ -385,37 +387,41 @@ body {
 #btnGit {
     margin-left: calc(17%);
 }
+#btnInsta .iWrap,
+#btnTwitter .tWrap,
+#btnGit .gWrap {
+    height: 2px;
+    width: 200px;
+    margin-top: calc(-100%);
+    padding: 0;
+    margin-left: calc(-95%);
+}
+#btnInsta .iLine,
+#btnTwitter .tLine,
+#btnGit .gLine {
+    height: 2px;
+    width: 2px;
+    padding: 0;
+    margin-left: calc(50%);
+    margin-top: calc(50%);
+    background-color: #00A1F1;
+    -webkit-transition: all .6s ease-in-out 0s;
+    transition: all .6s ease-in-out 0s;
+}
+#btnInsta:hover .iLine,
+#btnTwitter:hover .tLine,
+#btnGit:hover .gLine {
+    width: 85px;
+    margin-left: 60px;
+}
 .socialButtons li a i {
     color: black;
     font-size: 45px;
     margin-top: 15px;
 }
-.btnUnderline {
-    width: 0;
-    height: 3px;
-    background-color: #4790F5;
-    margin-left: -7.5px;
-    margin-top: 27.5px;
-}
-
-
-@keyframes socialUnderline {
-    0% {width: 0%;}
-    10% {width: 10%;}
-    20% {width: 20%;}
-    30% {width: 30%;}
-    40% {width: 40%;}
-    50% {width: 50%;}
-    60% {width: 60%;}
-    70% {width: 70%;}
-    80% {width: 80%;}
-    90% {width: 90%;}
-    100% {width: 90%;}
-}
 .mePic {
     background-color: black;
     height: calc(100%);
-
     padding: 5px;
 }
 .meImg {

@@ -32,10 +32,10 @@
     <section class="homeSection" ng-controller="HomeController">
         <div class="homeContainer container-fluid text-center parallax-container" data-parallax="scroll" data-speed="0.1">
             <div class="homeText row parallax-container">
-                <div class="homeName col-md-8 col-md-offset-2">
+                <div class="homeName col-md-12">
                     <p>TIMOTHY CLUFF</p>
                 </div>
-                <div class="homeTitle col-md-8 col-md-offset-2">
+                <div class="homeTitle col-md-12">
                     <p>{{home.title}}</p>
                 </div>
             </div>
@@ -64,19 +64,20 @@
         <div class="container-fluid skillContainer text-center" style="margin-left:-20px;margin-right:-20px;">
             <div class="java row col-md-3">
                 <div class="javaIcon">
-                    <i class="fa fa-coffee" aria-hidden="true" style="font-size:4.5vw;padding-top:calc(20%);color:#514E4F;"></i>
+                    <i class="fa fa-coffee" aria-hidden="true" style="font-size: 70px;padding-top:calc(20%);color:#514E4F;"></i>
+                    <p>{{skill.txtJava}}</p>
                 </div>
-                <p style="margin-left:calc(-65%);">{{skill.txtJava}}</p>
+
             </div>
             <div class="web row col-md-3">
                 <div class="webIcon">
-                    <i class="fa fa-desktop" aria-hidden="true" style="font-size:4.5vw;padding-top:calc(25%);color:#514E4F;"></i>
+                    <i class="fa fa-desktop" aria-hidden="true" style="font-size:70px;padding-top:calc(25%);color:#514E4F;"></i>
                     <p>{{skill.txtWeb}}</p>
                 </div>
             </div>
             <div class="cSharp row col-md-3">
                 <div class="cSharpIcon">
-                    <i class="fa fa-terminal" aria-hidden="true" style="font-size:4.5vw;padding-top:calc(20%);color:#514E4F;"></i>
+                    <i class="fa fa-terminal" aria-hidden="true" style="font-size:70px;padding-top:calc(20%);color:#514E4F;"></i>
                     <p>{{skill.txtSharp}}</p>
                 </div>
             </div>
@@ -168,7 +169,7 @@
 
     <section class="contactSection">
         <div class="contactContainer container-fluid">
-            <div class="mePic col-md-3 col-md-offset-1 text-center">
+            <div class="mePic col-md-3 col-md-offset-2 text-left">
                 <div class="meImg col-md-10 col-md-offset-1"></div>
             </div>
             <div class="break col-md-1">
@@ -205,26 +206,29 @@
                         <a href="https://www.instagram.com/timmy_tim_tim_/?hl=en">
                             <i class="fa fa-instagram"></i>
                         </a>
-                        <div class="btnUnderline"></div>
+                        <div class="iWrap">
+                            <div class="iLine"></div>
+                        </div>
                     </li>
                     <li id="btnTwitter">
                         <a href="https://twitter.com/CluffTim">
                             <i class="fa fa-twitter"></i>
                         </a>
-                        <div class="btnUnderline"></div>
+                        <div class="tWrap">
+                            <div class="tLine"></div>
+                        </div>
                     </li>
                     <li id="btnGit">
                         <a href="https://github.com/timothycluff">
                             <i class="fa fa-github"></i>
                         </a>
-                        <div class="btnUnderline"></div>
+                        <div class="gWrap">
+                            <div class="gLine"></div>
+                        </div>
                     </li>
                 </ul>
             </div>
-
         </div>
-
-
     </section>
 
 </div>
