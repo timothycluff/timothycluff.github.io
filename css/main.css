@@ -24,29 +24,42 @@ body {
     padding-top: 8px;
     border: none;
     font-weight: bold;
-    background-color: rgba(0,0,0,.9);
+    background-color: rgba(0,0,0,1);
 }
-.navbar-fixed-top .navbar-nav {
+.navbar-right {
+    height: 50px;
+    margin-top: -8px;
+    padding-bottom: 0;
+}
+.navbar-fixed-top .nav {
     padding-right: 10px;
+    height: 100%;
 }
-.navbar-fixed-top .navbar-nav > li > a {
+.navbar-fixed-top .nav > li > a {
+    width: 100%;
     color: white;
-    margin-right: 5px;
     border-right: 2px solid #8B0912;
-    margin-top: 5px;
+    margin-top: 15px;
     padding-top: 0;
     padding-bottom: 0;
 }
-.navbar-fixed-top .navbar-nav > li > a:hover,
-.navbar-fixed-top .navbar-nav > li > a:focus {
-    background-color: rgba(0,0,0,.9);
-    color: white;
+.navbar-fixed-top .nav > li > a:hover,
+.navbar-fixed-top .nav > li > a:focus {
+    background-color: transparent;
 }
-.navbar-fixed-top .navbar-nav > .active > a,
-.navbar-fixed-top .navbar-nav > .active > a:hover,
-.navbar-fixed-top .navbar-nav > .active > a:focus {
-    background-color: rgba(0,0,0,.9);
-    color: white;
+.lineOne, .lineTwo, .lineThree, .lineFour, .lineFive {
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    margin-left: 50%;
+    background-color: #00A1F1;
+    margin-top: 11px;
+    transition: width .5s, margin-left .5s;
+
+}
+#iOne:hover .lineOne, #iTwo:hover .lineTwo, #iThree:hover .lineThree, #iFour:hover .lineFour, #iFive:hover .lineFive {
+    width: 100%;
+    margin-left: 0;
 }
 .homeText {
     margin: 0 auto;

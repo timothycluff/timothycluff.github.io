@@ -19,18 +19,33 @@
             </div>
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
-                    <li class=""><a class="navHome" href="#">{{navbar.txtHome}}</a></li>
-                    <li class="navTwo"><a class="navAbout" href="#">{{navbar.txtAbout}}</a></li>
-                    <li class="navThree"><a class="navSkills" href="#">{{navbar.txtSkills}}</a></li>
-                    <li class="navFour"><a class="navEducation" href="#">{{navbar.txtEducation}}</a></li>
-                    <li class="navFive"><a class="navContact" href="#" style="border: none;">{{navbar.txtContact}}</a></li>
+                    <li id="iOne" class="navOne">
+                        <a class="navHome" href="#">{{navbar.txtHome}}</a>
+                        <div class="lineOne"></div>
+                    </li>
+                    <li id="iTwo" class="navTwo">
+                        <a class="navAbout" href="#aboutLink">{{navbar.txtAbout}}</a>
+                        <div class="lineTwo"></div>
+                    </li>
+                    <li id="iThree" class="navThree">
+                        <a class="navSkills" href="#skillsLink">{{navbar.txtSkills}}</a>
+                        <div class="lineThree"></div>
+                    </li>
+                    <li id="iFour" class="navFour">
+                        <a class="navEducation" href="#educationLink">{{navbar.txtEducation}}</a>
+                        <div class="lineFour"></div>
+                    </li>
+                    <li id="iFive" class="navFive">
+                        <a class="navContact" href="#contactLink" style="border: none;">{{navbar.txtContact}}</a>
+                        <div class="lineFive"></div>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
 
     <section class="homeSection" ng-controller="HomeController">
-        <div class="homeContainer container-fluid text-center parallax-container" data-parallax="scroll" data-speed="0.1">
+        <div class="homeContainer container-fluid text-center parallax-container" data-parallax="scroll">
             <div class="homeText row parallax-container">
                 <div class="homeName col-md-12">
                     <p>TIMOTHY CLUFF</p>
@@ -42,8 +57,8 @@
         </div>
     </section>
 
-
     <section class="aboutSection" ng-controller="AboutController">
+        <a name="aboutLink"></a>
         <div class="aboutContainer container-fluid text-center" style="margin-left:-20px;margin-right:-20px;">
             <div class="aboutLeft row col-md-3 pull-left" style="margin-top:calc(10%);">
                 <p class="aboutTitle text-left" style="border-bottom: 2px solid #8B0912">{{aboutMe.title}}</p>
@@ -61,6 +76,7 @@
     </section>
 
     <section ng-controller="SkillsController">
+        <a name="skillsLink"></a>
         <div class="container-fluid skillContainer text-center" style="margin-left:-20px;margin-right:-20px;">
             <div class="java row col-md-3">
                 <div class="javaIcon">
@@ -120,6 +136,7 @@
     </section>
 
     <section class="educationSection" ng-controller="EducationController">
+        <a name="educationLink"></a>
         <div class="educationContainer container-fluid text-center">
                 <div class="documentViewer col-md-4">
                     <div class="background row text-center">
@@ -168,6 +185,7 @@
     </section>
 
     <section class="contactSection">
+        <a name="contactLink"></a>
         <div class="contactContainer container-fluid">
             <div class="mePic col-md-3 col-md-offset-2 text-left">
                 <div class="meImg col-md-10 col-md-offset-1"></div>
