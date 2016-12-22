@@ -352,62 +352,39 @@ body {
 }
 .contactButtons {
     margin-top: calc(12.5%);
+    padding-left: calc(5%);
 }
 .contactButtons li {
+    height: 100px;
+}
+#btnContact,
+#btnLinkedin,
+#btnResume {
     background-color: #8B0912;
     border-radius: 10px;
-    width: 150px;
     height: 50px;
     transition: border-bottom .4s ease-in-out;
 }
-.contactButtons li:hover {
+#btnContact:hover, #btnLinkedin:hover, #btnResume:hover {
     border-bottom: 4px solid #00A1F1;
 }
-#btnContact,
-#btnLinkedin {
-    margin-right: calc(7%);
-}
-#btnContact a,
-#btnLinkedin a,
-#btnResume a {
-    color: black;
-    font-family: 'Source Code Pro', sans-serif;
-}
-#btnContact i,
-#btnLinkedin i,
-#btnResume i {
-    font-size: 25px;
-    margin-top: 10.5px;
-}
-#btnContact span,
-#btnLinkedin span,
-#btnResume span {
-    font-size: 22px;
-    margin-top: 9px;
-}
-#btnLinkedin span{margin-right: 5px;}
-#btnResume span{margin-right: 15px}
-
 .socialButtons li {
+    height: 100px;
+}
+#btnInsta,
+#btnTwitter,
+#btnGit {
+    height: 80px;
     background-color: #8B0912;
     border-radius: 50%;
     width: 80px;
     height: 80px;
 }
-#btnInsta {
-    margin-right: calc(17%);
-}
-#btnGit {
-    margin-left: calc(17%);
-}
-#btnInsta .iWrap,
-#btnTwitter .tWrap,
-#btnGit .gWrap {
-    height: 2px;
-    width: 200px;
-    margin-top: calc(-100%);
-    padding: 0;
-    margin-left: calc(-95%);
+#iWrap,
+#tWrap,
+#gWrap {
+    height: 4px;
+    background-color: #00A1F1;
 }
 #btnInsta .iLine,
 #btnTwitter .tLine,
