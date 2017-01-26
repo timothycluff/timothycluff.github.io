@@ -346,16 +346,9 @@ body {
     height: 350px;
     background-color:  #514E4F;
 }
-.contactButtons,
-.socialButtons {
-    height: 100px;
-}
 .contactButtons {
-    margin-top: calc(12.5%);
+    margin-top: calc(10%);
     padding-left: calc(5%);
-}
-.contactButtons li {
-    height: 100px;
 }
 #btnContact,
 #btnLinkedin,
@@ -364,12 +357,15 @@ body {
     border-radius: 10px;
     height: 50px;
     transition: border-bottom .4s ease-in-out;
+    padding: 0;
 }
 #btnContact:hover, #btnLinkedin:hover, #btnResume:hover {
     border-bottom: 4px solid #00A1F1;
 }
-.socialButtons li {
-    height: 100px;
+.socialButtons {
+    margin-top: calc(2%);
+    margin-left: calc(7%);
+    height: 80px;
 }
 #btnInsta,
 #btnTwitter,
@@ -378,31 +374,53 @@ body {
     background-color: #8B0912;
     border-radius: 50%;
     width: 80px;
-    height: 80px;
 }
-#iWrap,
-#tWrap,
-#gWrap {
-    height: 4px;
-    background-color: #00A1F1;
+#btnInsta {
+    margin-left: calc(8%);
 }
-#btnInsta .iLine,
-#btnTwitter .tLine,
-#btnGit .gLine {
+#btnGit {
+    margin-left: calc(-8%);
+}
+#iLine,
+#tLine,
+#gLine {
     height: 2px;
     width: 2px;
     padding: 0;
+    margin-top: calc(60%);
     margin-left: calc(50%);
-    margin-top: calc(50%);
     background-color: #00A1F1;
     -webkit-transition: all .6s ease-in-out 0s;
     transition: all .6s ease-in-out 0s;
 }
-#btnInsta:hover .iLine,
-#btnTwitter:hover .tLine,
-#btnGit:hover .gLine {
+#btnInsta:hover #iLine,
+#btnTwitter:hover #tLine,
+#btnGit:hover #gLine{
     width: 85px;
-    margin-left: 60px;
+    margin-left: -35%;
+}
+#btnContact a i,
+#btnLinkedin a i,
+#btnResume a i {
+    color: black;
+    font-size: 30px;
+    margin-top: calc(6%);
+    margin-left: calc(5%);
+    white-space: nowrap;
+}
+#btnContact a span,
+#btnLinkedin a span,
+#btnResume a span {
+    color: black;
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: 1.2vw;
+    padding-top: calc(8%);
+}
+#btnResume a span {
+    margin-left: calc(7%);
+}
+#btnLinkedin a span {
+    margin-left: calc(-4%);
 }
 .socialButtons li a i {
     color: black;
