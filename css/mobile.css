@@ -1,0 +1,31 @@
+@media only screen and (max-width: 420px) and (max-device-height: 750px) {
+    body, html {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .parallax-container {
+        width: 100%;
+        min-height: 500px;
+        background: transparent;
+        background-attachment: fixed;
+    }
+    .homeContainer {
+        background-image: url(../pictures/skiLiftCover.jpg);
+        background-size: calc(100%);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        visibility: visible;
+        padding: 0;
+    }
+    .wrapper {
+        width: 120%;
+        overflow-x: visible;
+    }
+    nav {
+        width: 100%;
+    }
+
+}
