@@ -20,10 +20,6 @@
         visibility: visible;
         padding: 0;
     }
-    .wrapper {
-        width: 120%;
-        overflow-x: visible;
-    }
     nav {
         width: 100%;
     }
